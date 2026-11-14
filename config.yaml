@@ -1,0 +1,60 @@
+database_path: data/rising.db
+digest_dir: data/digests
+
+github:
+  token_env: GITHUB_TOKEN
+  api_version: "2026-03-10"
+  graphql_batch_size: 25
+  search_min_interval_s: 2.1
+  min_interval_s: 0.25
+  max_retries: 6
+
+discovery:
+  window_days: 7
+  min_split_window_minutes: 30
+  max_repos_per_run: 2000
+  filters:
+    - name: ai-agents
+      topics: [llm, ai-agents, mcp]
+      min_stars: 20
+    - name: agent-keyword
+      keywords: [agent]
+      languages: [Python, TypeScript, Rust, Go]
+      min_stars: 30
+
+tracking:
+  track_days: 30
+  snapshot_interval_minutes: 60
+  discovery_interval_minutes: 360
+  backfill_star_history: true
+
+ranking:
+  velocity_window_hours: 24
+  min_stars: 10
+  min_rate_hours: 24
+
+red_flags:
+  min_stars_to_judge: 50
+  max_fork_ratio: 0.01
+  max_commits_for_code_dump: 3
+  spike_share: 0.5
+  spike_penalty: 0.5
+  spike_min_days: 3
+  stale_push_days: 3
+  clone_cluster_min: 3
+  clone_name_overlap: 0.6
+  clone_star_ratio: 1.25
+  clone_penalty: 0.1
+  disabled: []
+
+llm:
+  model: gpt-6.1-sol
+  api_key_env: OPENAI_API_KEY
+  top_n: 10
+  intent: >-
+    Weekly early-signal brief for a tech lead scouting new AI-agent and LLM tooling:
+    which new projects deserve a look, and which look like hype without substance
+  language: English
+  max_tool_rounds: 12
+  max_repair_attempts: 2
+  readme_chars: 3000
