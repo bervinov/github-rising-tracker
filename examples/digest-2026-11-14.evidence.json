@@ -1,0 +1,3894 @@
+{
+  "generated_at": "2026-11-14T23:19:09Z",
+  "model": "gpt-6.1-sol",
+  "grounding": {
+    "ok": true,
+    "checked": 111,
+    "violations": [],
+    "missing_repos": [],
+    "missing_facts": [],
+    "attempts": 2
+  },
+  "tool_calls": [
+    {
+      "tool": "list_rising",
+      "args": {
+        "n": 10
+      },
+      "result": {
+        "meta": {
+          "generated_at": "2026-11-14T23:19:09Z",
+          "window_days": 7,
+          "velocity_window_hours": 24.0,
+          "min_stars": 10,
+          "candidates": 788,
+          "data_as_of": "2026-11-14T23:17:05Z",
+          "score_formula": "score = stars_per_day x quality_multiplier, where quality_multiplier = (0.2 + 0.8 x activity_factor) x the penalty of each suspicious red flag (star_spike x 0.5, clone_cluster x 0.1 by default). activity_factor is the mean of four 0..1 signals: forks relative to 2% of stars, issues+PRs (3 = full), distinct recent commit authors beyond the first (2 extra = full), commits (10 = full). stars_per_day is measured between our own snapshots over the trailing window when possible, otherwise from the official star-history endpoint, otherwise the lifetime average; rates are never extrapolated from less than one day.",
+          "n": 10
+        },
+        "repos": [
+          {
+            "rank": 1,
+            "full_name": "FrigadeHQ/yogurt",
+            "url": "https://github.com/FrigadeHQ/yogurt",
+            "description": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux.",
+            "language": "TypeScript",
+            "topics": [
+              "ai-meeting-assistant",
+              "ai-notetaker",
+              "electron",
+              "granola-alternative",
+              "linux",
+              "llama-cpp",
+              "local-ai",
+              "local-first",
+              "macos",
+              "mcp",
+              "meeting-minutes",
+              "meeting-notes",
+              "offline-first",
+              "open-source",
+              "privacy",
+              "speech-to-text",
+              "transcription",
+              "whisper",
+              "whisper-cpp",
+              "windows"
+            ],
+            "license": "MIT",
+            "owner_type": "Organization",
+            "created_at": "2026-11-10T20:01:01Z",
+            "age_hours": 99.3,
+            "matched_filters": [
+              "ai-agents"
+            ],
+            "snapshot_count": 23,
+            "latest": {
+              "repo_id": 1453132706,
+              "captured_at": "2026-11-14T23:16:47Z",
+              "run_id": 71,
+              "stars": 1478,
+              "forks": 77,
+              "watchers": 1,
+              "open_issues": 17,
+              "closed_issues": 7,
+              "open_prs": 0,
+              "merged_prs": 8,
+              "closed_prs": 5,
+              "releases": 15,
+              "commits": 191,
+              "commit_authors_recent": 2,
+              "last_commit_at": "2026-11-14T23:06:34Z",
+              "latest_release_tag": "v0.3.17",
+              "latest_release_at": "2026-11-14T22:03:42Z",
+              "pushed_at": "2026-11-14T23:06:35Z",
+              "disk_kb": 9866,
+              "is_archived": false
+            },
+            "velocity": {
+              "source": "snapshots",
+              "stars_gained": 228,
+              "span_hours": 25.0,
+              "stars_per_day": 219.13,
+              "lifetime_stars_per_day": 357.35
+            },
+            "activity": {
+              "issues_total": 24,
+              "prs_total": 13,
+              "factor": 0.88,
+              "signals": {
+                "forks": 1.0,
+                "issues_prs": 1.0,
+                "contributors": 0.5,
+                "commits": 1.0
+              }
+            },
+            "quality_multiplier": 0.904,
+            "score": 198.09,
+            "red_flags": []
+          },
+          {
+            "rank": 2,
+            "full_name": "berkantay/gpucanvas",
+            "url": "https://github.com/berkantay/gpucanvas",
+            "description": "Put thousands of live DOM nodes on an infinite canvas: the GPU draws them, an editor selects, moves and resizes them, shaders and transitions run on them, and an AI agent can read them and point at them.",
+            "language": "TypeScript",
+            "topics": [
+              "ai-agents",
+              "canvas",
+              "design-tools",
+              "editor",
+              "html-in-canvas",
+              "infinite-canvas",
+              "react",
+              "shaders",
+              "transitions",
+              "typescript",
+              "webgpu",
+              "wgsl"
+            ],
+            "license": "MIT",
+            "owner_type": "User",
+            "created_at": "2026-11-12T23:19:42Z",
+            "age_hours": 48.0,
+            "matched_filters": [
+              "agent-keyword",
+              "ai-agents"
+            ],
+            "snapshot_count": 23,
+            "latest": {
+              "repo_id": 1455933518,
+              "captured_at": "2026-11-14T23:16:41Z",
+              "run_id": 71,
+              "stars": 420,
+              "forks": 26,
+              "watchers": 1,
+              "open_issues": 1,
+              "closed_issues": 0,
+              "open_prs": 0,
+              "merged_prs": 0,
+              "closed_prs": 0,
+              "releases": 7,
+              "commits": 45,
+              "commit_authors_recent": 1,
+              "last_commit_at": "2026-11-14T11:36:03Z",
+              "latest_release_tag": "v0.4.3",
+              "latest_release_at": "2026-11-14T11:18:49Z",
+              "pushed_at": "2026-11-14T11:36:06Z",
+              "disk_kb": 13028,
+              "is_archived": false
+            },
+            "velocity": {
+              "source": "snapshots",
+              "stars_gained": 299,
+              "span_hours": 25.0,
+              "stars_per_day": 287.36,
+              "lifetime_stars_per_day": 210.22
+            },
+            "activity": {
+              "issues_total": 1,
+              "prs_total": 0,
+              "factor": 0.58,
+              "signals": {
+                "forks": 1.0,
+                "issues_prs": 0.33,
+                "contributors": 0.0,
+                "commits": 1.0
+              }
+            },
+            "quality_multiplier": 0.664,
+            "score": 190.81,
+            "red_flags": [
+              {
+                "code": "single_author",
+                "message": "All recent commits come from one author",
+                "suspicious": false,
+                "penalty": 1.0,
+                "evidence": {
+                  "commit_authors_recent": 1
+                }
+              }
+            ]
+          },
+          {
+            "rank": 3,
+            "full_name": "alexeyw/lot-map",
+            "url": "https://github.com/alexeyw/lot-map",
+            "description": "A live map beside the chat that shows what Claude Code is doing: tool calls, model steps, hooks, skills and subagents light up as they happen. Local only, in 7 languages.",
+            "language": "TypeScript",
+            "topics": [
+              "agent-observability",
+              "ai-agents",
+              "claude",
+              "claude-code",
+              "claude-code-plugin",
+              "developer-tools",
+              "svg-animation",
+              "typescript",
+              "visualization"
+            ],
+            "license": "MIT",
+            "owner_type": "User",
+            "created_at": "2026-11-09T19:13:52Z",
+            "age_hours": 124.1,
+            "matched_filters": [
+              "ai-agents"
+            ],
+            "snapshot_count": 23,
+            "latest": {
+              "repo_id": 1451775929,
+              "captured_at": "2026-11-14T23:16:53Z",
+              "run_id": 71,
+              "stars": 824,
+              "forks": 87,
+              "watchers": 6,
+              "open_issues": 6,
+              "closed_issues": 7,
+              "open_prs": 1,
+              "merged_prs": 53,
+              "closed_prs": 3,
+              "releases": 3,
+              "commits": 53,
+              "commit_authors_recent": 10,
+              "last_commit_at": "2026-11-13T20:31:02Z",
+              "latest_release_tag": "v0.7.0",
+              "latest_release_at": "2026-11-13T20:31:24Z",
+              "pushed_at": "2026-11-14T22:32:24Z",
+              "disk_kb": 31051,
+              "is_archived": false
+            },
+            "velocity": {
+              "source": "snapshots",
+              "stars_gained": 101,
+              "span_hours": 25.0,
+              "stars_per_day": 97.07,
+              "lifetime_stars_per_day": 159.42
+            },
+            "activity": {
+              "issues_total": 13,
+              "prs_total": 57,
+              "factor": 1.0,
+              "signals": {
+                "forks": 1.0,
+                "issues_prs": 1.0,
+                "contributors": 1.0,
+                "commits": 1.0
+              }
+            },
+            "quality_multiplier": 1.0,
+            "score": 97.07,
+            "red_flags": []
+          },
+          {
+            "rank": 4,
+            "full_name": "StormBrawlerSack/legwork-osint-ai-investigator",
+            "url": "https://github.com/StormBrawlerSack/legwork-osint-ai-investigator",
+            "description": "AI OSINT investigator for Windows: ask a question in plain words and get an answer built from public sources, with a source on every sentence.",
+            "language": "JavaScript",
+            "topics": [
+              "ai-agent",
+              "ai-investigator",
+              "citations",
+              "investigation",
+              "llm",
+              "osint",
+              "osint-tool",
+              "research-assistant"
+            ],
+            "license": "MIT",
+            "owner_type": "User",
+            "created_at": "2026-11-13T13:30:28Z",
+            "age_hours": 33.8,
+            "matched_filters": [
+              "ai-agents"
+            ],
+            "snapshot_count": 23,
+            "latest": {
+              "repo_id": 1456635592,
+              "captured_at": "2026-11-14T23:16:41Z",
+              "run_id": 71,
+              "stars": 219,
+              "forks": 16,
+              "watchers": 0,
+              "open_issues": 0,
+              "closed_issues": 0,
+              "open_prs": 0,
+              "merged_prs": 0,
+              "closed_prs": 0,
+              "releases": 0,
+              "commits": 9,
+              "commit_authors_recent": 1,
+              "last_commit_at": "2026-11-05T03:09:30Z",
+              "latest_release_tag": null,
+              "latest_release_at": null,
+              "pushed_at": "2026-11-13T13:31:56Z",
+              "disk_kb": 448,
+              "is_archived": false
+            },
+            "velocity": {
+              "source": "snapshots",
+              "stars_gained": 134,
+              "span_hours": 25.0,
+              "stars_per_day": 128.78,
+              "lifetime_stars_per_day": 155.64
+            },
+            "activity": {
+              "issues_total": 0,
+              "prs_total": 0,
+              "factor": 0.47,
+              "signals": {
+                "forks": 1.0,
+                "issues_prs": 0.0,
+                "contributors": 0.0,
+                "commits": 0.9
+              }
+            },
+            "quality_multiplier": 0.576,
+            "score": 74.18,
+            "red_flags": [
+              {
+                "code": "no_issues_or_prs",
+                "message": "No issues or pull requests despite attention",
+                "suspicious": false,
+                "penalty": 1.0,
+                "evidence": {
+                  "stars": 219,
+                  "issues_total": 0,
+                  "prs_total": 0
+                }
+              },
+              {
+                "code": "single_author",
+                "message": "All recent commits come from one author",
+                "suspicious": false,
+                "penalty": 1.0,
+                "evidence": {
+                  "commit_authors_recent": 1
+                }
+              }
+            ]
+          },
+          {
+            "rank": 5,
+            "full_name": "Dodaios/ste80-humanizer",
+            "url": "https://github.com/Dodaios/ste80-humanizer",
+            "description": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.",
+            "language": "Python",
+            "topics": [
+              "agent-skills",
+              "ai-writing",
+              "asd-ste100",
+              "claude-code",
+              "claude-skills",
+              "codex",
+              "cursor",
+              "humanize-ai-text",
+              "humanizer",
+              "karpathy",
+              "llm",
+              "plain-language",
+              "simplified-technical-english",
+              "writing"
+            ],
+            "license": "MIT",
+            "owner_type": "Organization",
+            "created_at": "2026-11-09T17:18:59Z",
+            "age_hours": 126.0,
+            "matched_filters": [
+              "agent-keyword",
+              "ai-agents"
+            ],
+            "snapshot_count": 23,
+            "latest": {
+              "repo_id": 1451662178,
+              "captured_at": "2026-11-14T23:16:58Z",
+              "run_id": 71,
+              "stars": 595,
+              "forks": 37,
+              "watchers": 3,
+              "open_issues": 0,
+              "closed_issues": 0,
+              "open_prs": 0,
+              "merged_prs": 1,
+              "closed_prs": 1,
+              "releases": 0,
+              "commits": 9,
+              "commit_authors_recent": 1,
+              "last_commit_at": "2026-11-14T14:20:13Z",
+              "latest_release_tag": null,
+              "latest_release_at": null,
+              "pushed_at": "2026-11-14T14:20:14Z",
+              "disk_kb": 685,
+              "is_archived": false
+            },
+            "velocity": {
+              "source": "snapshots",
+              "stars_gained": 107,
+              "span_hours": 25.0,
+              "stars_per_day": 102.83,
+              "lifetime_stars_per_day": 113.36
+            },
+            "activity": {
+              "issues_total": 0,
+              "prs_total": 2,
+              "factor": 0.64,
+              "signals": {
+                "forks": 1.0,
+                "issues_prs": 0.67,
+                "contributors": 0.0,
+                "commits": 0.9
+              }
+            },
+            "quality_multiplier": 0.712,
+            "score": 73.21,
+            "red_flags": [
+              {
+                "code": "single_author",
+                "message": "All recent commits come from one author",
+                "suspicious": false,
+                "penalty": 1.0,
+                "evidence": {
+                  "commit_authors_recent": 1
+                }
+              }
+            ]
+          },
+          {
+            "rank": 6,
+            "full_name": "simplexai-labs/linger",
+            "url": "https://github.com/simplexai-labs/linger",
+            "description": "Linger is An Open-Source Personal Agent That Runs Fully on Your PC.  We aim to break Big Tech’s grip on AI by bringing powerful local AI to everyday computers through efficient model–harness co-design, so everyone can run their own.",
+            "language": "TypeScript",
+            "topics": [
+              "agent-teams",
+              "local-llm",
+              "memory",
+              "personal-agent",
+              "proactive-agent",
+              "proactive-ai"
+            ],
+            "license": "NOASSERTION",
+            "owner_type": "Organization",
+            "created_at": "2026-11-10T03:50:38Z",
+            "age_hours": 115.5,
+            "matched_filters": [
+              "agent-keyword"
+            ],
+            "snapshot_count": 23,
+            "latest": {
+              "repo_id": 1452175380,
+              "captured_at": "2026-11-14T23:16:53Z",
+              "run_id": 71,
+              "stars": 260,
+              "forks": 23,
+              "watchers": 1,
+              "open_issues": 3,
+              "closed_issues": 2,
+              "open_prs": 15,
+              "merged_prs": 68,
+              "closed_prs": 9,
+              "releases": 3,
+              "commits": 204,
+              "commit_authors_recent": 5,
+              "last_commit_at": "2026-11-14T02:14:11Z",
+              "latest_release_tag": "desktop-v0.1.1",
+              "latest_release_at": "2026-11-13T15:06:12Z",
+              "pushed_at": "2026-11-14T02:16:33Z",
+              "disk_kb": 42556,
+              "is_archived": false
+            },
+            "velocity": {
+              "source": "snapshots",
+              "stars_gained": 75,
+              "span_hours": 25.0,
+              "stars_per_day": 72.08,
+              "lifetime_stars_per_day": 54.06
+            },
+            "activity": {
+              "issues_total": 5,
+              "prs_total": 92,
+              "factor": 1.0,
+              "signals": {
+                "forks": 1.0,
+                "issues_prs": 1.0,
+                "contributors": 1.0,
+                "commits": 1.0
+              }
+            },
+            "quality_multiplier": 1.0,
+            "score": 72.08,
+            "red_flags": []
+          },
+          {
+            "rank": 7,
+            "full_name": "agentes-chat/agentes-chat",
+            "url": "https://github.com/agentes-chat/agentes-chat",
+            "description": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
+            "language": "TypeScript",
+            "topics": [
+              "agentic-ai",
+              "ai-agents",
+              "browser-automation",
+              "chat",
+              "claude",
+              "claude-code",
+              "codex",
+              "collaboration",
+              "computer-use",
+              "docker-compose",
+              "gemini",
+              "grok",
+              "human-in-the-loop",
+              "llm",
+              "mcp",
+              "multi-agent",
+              "openai",
+              "self-hosted",
+              "slack-alternative",
+              "team-chat"
+            ],
+            "license": "AGPL-3.0",
+            "owner_type": "Organization",
+            "created_at": "2026-11-09T00:50:28Z",
+            "age_hours": 142.5,
+            "matched_filters": [
+              "agent-keyword",
+              "ai-agents"
+            ],
+            "snapshot_count": 23,
+            "latest": {
+              "repo_id": 1450794567,
+              "captured_at": "2026-11-14T23:16:58Z",
+              "run_id": 71,
+              "stars": 1399,
+              "forks": 247,
+              "watchers": 3,
+              "open_issues": 72,
+              "closed_issues": 26,
+              "open_prs": 137,
+              "merged_prs": 273,
+              "closed_prs": 38,
+              "releases": 15,
+              "commits": 8911,
+              "commit_authors_recent": 2,
+              "last_commit_at": "2026-11-14T23:01:02Z",
+              "latest_release_tag": "desktop-v0.8.8",
+              "latest_release_at": "2026-11-14T23:04:11Z",
+              "pushed_at": "2026-11-14T23:11:27Z",
+              "disk_kb": 145410,
+              "is_archived": false
+            },
+            "velocity": {
+              "source": "snapshots",
+              "stars_gained": 67,
+              "span_hours": 25.0,
+              "stars_per_day": 64.39,
+              "lifetime_stars_per_day": 235.72
+            },
+            "activity": {
+              "issues_total": 98,
+              "prs_total": 448,
+              "factor": 0.88,
+              "signals": {
+                "forks": 1.0,
+                "issues_prs": 1.0,
+                "contributors": 0.5,
+                "commits": 1.0
+              }
+            },
+            "quality_multiplier": 0.904,
+            "score": 58.21,
+            "red_flags": []
+          },
+          {
+            "rank": 8,
+            "full_name": "Moh4696/cinematic-skill",
+            "url": "https://github.com/Moh4696/cinematic-skill",
+            "description": "Agent skill for narrated cinematic films built entirely from code: one continuous camera over photos, maps and cards, timed to the voice. Claude Code, Codex, Cursor, Gemini CLI.",
+            "language": "Python",
+            "topics": [
+              "agent-skills",
+              "claude-code",
+              "codex",
+              "documentary",
+              "explainer-video",
+              "motion-graphics",
+              "skia",
+              "video"
+            ],
+            "license": "MIT",
+            "owner_type": "User",
+            "created_at": "2026-11-09T07:58:11Z",
+            "age_hours": 135.3,
+            "matched_filters": [
+              "agent-keyword"
+            ],
+            "snapshot_count": 23,
+            "latest": {
+              "repo_id": 1451084291,
+              "captured_at": "2026-11-14T23:16:58Z",
+              "run_id": 71,
+              "stars": 396,
+              "forks": 33,
+              "watchers": 0,
+              "open_issues": 0,
+              "closed_issues": 0,
+              "open_prs": 0,
+              "merged_prs": 0,
+              "closed_prs": 0,
+              "releases": 0,
+              "commits": 3,
+              "commit_authors_recent": 1,
+              "last_commit_at": "2026-11-09T15:35:09Z",
+              "latest_release_tag": null,
+              "latest_release_at": null,
+              "pushed_at": "2026-11-09T15:35:12Z",
+              "disk_kb": 1989,
+              "is_archived": false
+            },
+            "velocity": {
+              "source": "snapshots",
+              "stars_gained": 113,
+              "span_hours": 25.0,
+              "stars_per_day": 108.6,
+              "lifetime_stars_per_day": 70.24
+            },
+            "activity": {
+              "issues_total": 0,
+              "prs_total": 0,
+              "factor": 0.33,
+              "signals": {
+                "forks": 1.0,
+                "issues_prs": 0.0,
+                "contributors": 0.0,
+                "commits": 0.3
+              }
+            },
+            "quality_multiplier": 0.464,
+            "score": 50.39,
+            "red_flags": [
+              {
+                "code": "no_issues_or_prs",
+                "message": "No issues or pull requests despite attention",
+                "suspicious": false,
+                "penalty": 1.0,
+                "evidence": {
+                  "stars": 396,
+                  "issues_total": 0,
+                  "prs_total": 0
+                }
+              },
+              {
+                "code": "single_author",
+                "message": "All recent commits come from one author",
+                "suspicious": false,
+                "penalty": 1.0,
+                "evidence": {
+                  "commit_authors_recent": 1
+                }
+              },
+              {
+                "code": "code_dump",
+                "message": "Very few commits: looks like a one-shot code dump",
+                "suspicious": false,
+                "penalty": 1.0,
+                "evidence": {
+                  "commits": 3
+                }
+              },
+              {
+                "code": "stale_while_growing",
+                "message": "Stars keep growing but no pushes recently",
+                "suspicious": false,
+                "penalty": 1.0,
+                "evidence": {
+                  "days_since_push": 5.3,
+                  "pushed_at": "2026-11-09T15:35:12Z"
+                }
+              }
+            ]
+          },
+          {
+            "rank": 9,
+            "full_name": "RouteInferno/shamus-osint-ai-agent",
+            "url": "https://github.com/RouteInferno/shamus-osint-ai-agent",
+            "description": "Command-line AI agent for OSINT: one command, it picks the tools, runs them and writes the case file.",
+            "language": "JavaScript",
+            "topics": [
+              "ai-agent",
+              "cli",
+              "investigation",
+              "llm",
+              "osint",
+              "osint-tool",
+              "reconnaissance",
+              "terminal"
+            ],
+            "license": "MIT",
+            "owner_type": "User",
+            "created_at": "2026-11-13T14:19:35Z",
+            "age_hours": 33.0,
+            "matched_filters": [
+              "ai-agents"
+            ],
+            "snapshot_count": 23,
+            "latest": {
+              "repo_id": 1456688919,
+              "captured_at": "2026-11-14T23:16:37Z",
+              "run_id": 71,
+              "stars": 157,
+              "forks": 8,
+              "watchers": 0,
+              "open_issues": 0,
+              "closed_issues": 0,
+              "open_prs": 0,
+              "merged_prs": 0,
+              "closed_prs": 0,
+              "releases": 0,
+              "commits": 9,
+              "commit_authors_recent": 1,
+              "last_commit_at": "2026-11-10T05:33:31Z",
+              "latest_release_tag": null,
+              "latest_release_at": null,
+              "pushed_at": "2026-11-13T14:20:57Z",
+              "disk_kb": 390,
+              "is_archived": false
+            },
+            "velocity": {
+              "source": "snapshots",
+              "stars_gained": 90,
+              "span_hours": 25.0,
+              "stars_per_day": 86.5,
+              "lifetime_stars_per_day": 114.35
+            },
+            "activity": {
+              "issues_total": 0,
+              "prs_total": 0,
+              "factor": 0.47,
+              "signals": {
+                "forks": 1.0,
+                "issues_prs": 0.0,
+                "contributors": 0.0,
+                "commits": 0.9
+              }
+            },
+            "quality_multiplier": 0.576,
+            "score": 49.82,
+            "red_flags": [
+              {
+                "code": "no_issues_or_prs",
+                "message": "No issues or pull requests despite attention",
+                "suspicious": false,
+                "penalty": 1.0,
+                "evidence": {
+                  "stars": 157,
+                  "issues_total": 0,
+                  "prs_total": 0
+                }
+              },
+              {
+                "code": "single_author",
+                "message": "All recent commits come from one author",
+                "suspicious": false,
+                "penalty": 1.0,
+                "evidence": {
+                  "commit_authors_recent": 1
+                }
+              }
+            ]
+          },
+          {
+            "rank": 10,
+            "full_name": "DandanLLab/SnowCatQQ",
+            "url": "https://github.com/DandanLLab/SnowCatQQ",
+            "description": "SnowCat 雪猫：NapCat + SnowLuma 融合第三方 QQ 客户端，社区接力维护，V8 通道全功能适配 QQ 9.9.37，全工具全源码公开",
+            "language": "TypeScript",
+            "topics": [
+              "chatbot",
+              "electron",
+              "mcp",
+              "napcat",
+              "onebot",
+              "onebot11",
+              "qq",
+              "qq-bot",
+              "reverse-engineering",
+              "snowcat"
+            ],
+            "license": "NOASSERTION",
+            "owner_type": "User",
+            "created_at": "2026-11-11T22:23:10Z",
+            "age_hours": 72.9,
+            "matched_filters": [
+              "ai-agents"
+            ],
+            "snapshot_count": 23,
+            "latest": {
+              "repo_id": 1454561955,
+              "captured_at": "2026-11-14T23:16:47Z",
+              "run_id": 71,
+              "stars": 319,
+              "forks": 127,
+              "watchers": 1,
+              "open_issues": 11,
+              "closed_issues": 51,
+              "open_prs": 0,
+              "merged_prs": 21,
+              "closed_prs": 7,
+              "releases": 1,
+              "commits": 53,
+              "commit_authors_recent": 5,
+              "last_commit_at": "2026-11-14T09:31:03Z",
+              "latest_release_tag": "v6.0.0",
+              "latest_release_at": "2026-11-11T22:30:20Z",
+              "pushed_at": "2026-11-14T09:31:04Z",
+              "disk_kb": 43359,
+              "is_archived": false
+            },
+            "velocity": {
+              "source": "snapshots",
+              "stars_gained": 38,
+              "span_hours": 25.0,
+              "stars_per_day": 36.52,
+              "lifetime_stars_per_day": 105.03
+            },
+            "activity": {
+              "issues_total": 62,
+              "prs_total": 28,
+              "factor": 1.0,
+              "signals": {
+                "forks": 1.0,
+                "issues_prs": 1.0,
+                "contributors": 1.0,
+                "commits": 1.0
+              }
+            },
+            "quality_multiplier": 1.0,
+            "score": 36.52,
+            "red_flags": []
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_repo_details",
+      "args": {
+        "full_name": "FrigadeHQ/yogurt"
+      },
+      "result": {
+        "rank": 1,
+        "full_name": "FrigadeHQ/yogurt",
+        "url": "https://github.com/FrigadeHQ/yogurt",
+        "description": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux.",
+        "language": "TypeScript",
+        "topics": [
+          "ai-meeting-assistant",
+          "ai-notetaker",
+          "electron",
+          "granola-alternative",
+          "linux",
+          "llama-cpp",
+          "local-ai",
+          "local-first",
+          "macos",
+          "mcp",
+          "meeting-minutes",
+          "meeting-notes",
+          "offline-first",
+          "open-source",
+          "privacy",
+          "speech-to-text",
+          "transcription",
+          "whisper",
+          "whisper-cpp",
+          "windows"
+        ],
+        "license": "MIT",
+        "owner_type": "Organization",
+        "created_at": "2026-11-10T20:01:01Z",
+        "age_hours": 99.3,
+        "matched_filters": [
+          "ai-agents"
+        ],
+        "snapshot_count": 23,
+        "latest": {
+          "repo_id": 1453132706,
+          "captured_at": "2026-11-14T23:16:47Z",
+          "run_id": 71,
+          "stars": 1478,
+          "forks": 77,
+          "watchers": 1,
+          "open_issues": 17,
+          "closed_issues": 7,
+          "open_prs": 0,
+          "merged_prs": 8,
+          "closed_prs": 5,
+          "releases": 15,
+          "commits": 191,
+          "commit_authors_recent": 2,
+          "last_commit_at": "2026-11-14T23:06:34Z",
+          "latest_release_tag": "v0.3.17",
+          "latest_release_at": "2026-11-14T22:03:42Z",
+          "pushed_at": "2026-11-14T23:06:35Z",
+          "disk_kb": 9866,
+          "is_archived": false
+        },
+        "velocity": {
+          "source": "snapshots",
+          "stars_gained": 228,
+          "span_hours": 25.0,
+          "stars_per_day": 219.13,
+          "lifetime_stars_per_day": 357.35
+        },
+        "activity": {
+          "issues_total": 24,
+          "prs_total": 13,
+          "factor": 0.88,
+          "signals": {
+            "forks": 1.0,
+            "issues_prs": 1.0,
+            "contributors": 0.5,
+            "commits": 1.0
+          }
+        },
+        "quality_multiplier": 0.904,
+        "score": 198.09,
+        "red_flags": [],
+        "snapshots": [
+          {
+            "captured_at": "2026-11-13T16:53:19Z",
+            "stars": 1199,
+            "forks": 47,
+            "open_issues": 18,
+            "open_prs": 4,
+            "commits": 132
+          },
+          {
+            "captured_at": "2026-11-13T17:03:51Z",
+            "stars": 1199,
+            "forks": 47,
+            "open_issues": 18,
+            "open_prs": 4,
+            "commits": 132
+          },
+          {
+            "captured_at": "2026-11-13T17:08:43Z",
+            "stars": 1200,
+            "forks": 47,
+            "open_issues": 18,
+            "open_prs": 4,
+            "commits": 132
+          },
+          {
+            "captured_at": "2026-11-13T17:24:49Z",
+            "stars": 1201,
+            "forks": 47,
+            "open_issues": 18,
+            "open_prs": 4,
+            "commits": 132
+          },
+          {
+            "captured_at": "2026-11-13T17:28:53Z",
+            "stars": 1201,
+            "forks": 48,
+            "open_issues": 18,
+            "open_prs": 4,
+            "commits": 132
+          },
+          {
+            "captured_at": "2026-11-13T17:45:50Z",
+            "stars": 1205,
+            "forks": 48,
+            "open_issues": 19,
+            "open_prs": 4,
+            "commits": 132
+          },
+          {
+            "captured_at": "2026-11-13T22:18:28Z",
+            "stars": 1250,
+            "forks": 53,
+            "open_issues": 17,
+            "open_prs": 2,
+            "commits": 139
+          },
+          {
+            "captured_at": "2026-11-14T01:20:49Z",
+            "stars": 1272,
+            "forks": 53,
+            "open_issues": 18,
+            "open_prs": 1,
+            "commits": 145
+          },
+          {
+            "captured_at": "2026-11-14T18:12:07Z",
+            "stars": 1415,
+            "forks": 73,
+            "open_issues": 18,
+            "open_prs": 0,
+            "commits": 178
+          },
+          {
+            "captured_at": "2026-11-14T18:21:09Z",
+            "stars": 1419,
+            "forks": 73,
+            "open_issues": 18,
+            "open_prs": 0,
+            "commits": 179
+          },
+          {
+            "captured_at": "2026-11-14T19:24:11Z",
+            "stars": 1431,
+            "forks": 73,
+            "open_issues": 18,
+            "open_prs": 0,
+            "commits": 179
+          },
+          {
+            "captured_at": "2026-11-14T20:27:16Z",
+            "stars": 1446,
+            "forks": 74,
+            "open_issues": 17,
+            "open_prs": 0,
+            "commits": 182
+          },
+          {
+            "captured_at": "2026-11-14T21:16:37Z",
+            "stars": 1454,
+            "forks": 75,
+            "open_issues": 17,
+            "open_prs": 0,
+            "commits": 187
+          },
+          {
+            "captured_at": "2026-11-14T21:25:13Z",
+            "stars": 1455,
+            "forks": 75,
+            "open_issues": 17,
+            "open_prs": 0,
+            "commits": 187
+          },
+          {
+            "captured_at": "2026-11-14T21:33:55Z",
+            "stars": 1456,
+            "forks": 75,
+            "open_issues": 17,
+            "open_prs": 0,
+            "commits": 187
+          },
+          {
+            "captured_at": "2026-11-14T21:40:08Z",
+            "stars": 1458,
+            "forks": 75,
+            "open_issues": 17,
+            "open_prs": 0,
+            "commits": 187
+          },
+          {
+            "captured_at": "2026-11-14T21:46:12Z",
+            "stars": 1458,
+            "forks": 75,
+            "open_issues": 17,
+            "open_prs": 0,
+            "commits": 187
+          },
+          {
+            "captured_at": "2026-11-14T22:07:51Z",
+            "stars": 1462,
+            "forks": 76,
+            "open_issues": 17,
+            "open_prs": 0,
+            "commits": 190
+          },
+          {
+            "captured_at": "2026-11-14T22:14:41Z",
+            "stars": 1463,
+            "forks": 76,
+            "open_issues": 17,
+            "open_prs": 0,
+            "commits": 190
+          },
+          {
+            "captured_at": "2026-11-14T22:20:24Z",
+            "stars": 1464,
+            "forks": 76,
+            "open_issues": 17,
+            "open_prs": 0,
+            "commits": 190
+          },
+          {
+            "captured_at": "2026-11-14T22:34:13Z",
+            "stars": 1468,
+            "forks": 76,
+            "open_issues": 17,
+            "open_prs": 0,
+            "commits": 190
+          },
+          {
+            "captured_at": "2026-11-14T22:39:00Z",
+            "stars": 1471,
+            "forks": 77,
+            "open_issues": 17,
+            "open_prs": 0,
+            "commits": 190
+          },
+          {
+            "captured_at": "2026-11-14T23:16:47Z",
+            "stars": 1478,
+            "forks": 77,
+            "open_issues": 17,
+            "open_prs": 0,
+            "commits": 191
+          }
+        ],
+        "star_history": [
+          {
+            "day": "2026-11-10",
+            "stars_added": 0
+          },
+          {
+            "day": "2026-11-11",
+            "stars_added": 578
+          },
+          {
+            "day": "2026-11-12",
+            "stars_added": 479
+          },
+          {
+            "day": "2026-11-13",
+            "stars_added": 276
+          },
+          {
+            "day": "2026-11-14",
+            "stars_added": 81
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_readme",
+      "args": {
+        "full_name": "FrigadeHQ/yogurt"
+      },
+      "result": {
+        "full_name": "FrigadeHQ/yogurt",
+        "readme": null
+      }
+    },
+    {
+      "tool": "get_repo_details",
+      "args": {
+        "full_name": "berkantay/gpucanvas"
+      },
+      "result": {
+        "rank": 2,
+        "full_name": "berkantay/gpucanvas",
+        "url": "https://github.com/berkantay/gpucanvas",
+        "description": "Put thousands of live DOM nodes on an infinite canvas: the GPU draws them, an editor selects, moves and resizes them, shaders and transitions run on them, and an AI agent can read them and point at them.",
+        "language": "TypeScript",
+        "topics": [
+          "ai-agents",
+          "canvas",
+          "design-tools",
+          "editor",
+          "html-in-canvas",
+          "infinite-canvas",
+          "react",
+          "shaders",
+          "transitions",
+          "typescript",
+          "webgpu",
+          "wgsl"
+        ],
+        "license": "MIT",
+        "owner_type": "User",
+        "created_at": "2026-11-12T23:19:42Z",
+        "age_hours": 48.0,
+        "matched_filters": [
+          "agent-keyword",
+          "ai-agents"
+        ],
+        "snapshot_count": 23,
+        "latest": {
+          "repo_id": 1455933518,
+          "captured_at": "2026-11-14T23:16:41Z",
+          "run_id": 71,
+          "stars": 420,
+          "forks": 26,
+          "watchers": 1,
+          "open_issues": 1,
+          "closed_issues": 0,
+          "open_prs": 0,
+          "merged_prs": 0,
+          "closed_prs": 0,
+          "releases": 7,
+          "commits": 45,
+          "commit_authors_recent": 1,
+          "last_commit_at": "2026-11-14T11:36:03Z",
+          "latest_release_tag": "v0.4.3",
+          "latest_release_at": "2026-11-14T11:18:49Z",
+          "pushed_at": "2026-11-14T11:36:06Z",
+          "disk_kb": 13028,
+          "is_archived": false
+        },
+        "velocity": {
+          "source": "snapshots",
+          "stars_gained": 299,
+          "span_hours": 25.0,
+          "stars_per_day": 287.36,
+          "lifetime_stars_per_day": 210.22
+        },
+        "activity": {
+          "issues_total": 1,
+          "prs_total": 0,
+          "factor": 0.58,
+          "signals": {
+            "forks": 1.0,
+            "issues_prs": 0.33,
+            "contributors": 0.0,
+            "commits": 1.0
+          }
+        },
+        "quality_multiplier": 0.664,
+        "score": 190.81,
+        "red_flags": [
+          {
+            "code": "single_author",
+            "message": "All recent commits come from one author",
+            "suspicious": false,
+            "penalty": 1.0,
+            "evidence": {
+              "commit_authors_recent": 1
+            }
+          }
+        ],
+        "snapshots": [
+          {
+            "captured_at": "2026-11-13T16:52:41Z",
+            "stars": 27,
+            "forks": 1,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 32
+          },
+          {
+            "captured_at": "2026-11-13T17:03:45Z",
+            "stars": 32,
+            "forks": 2,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 32
+          },
+          {
+            "captured_at": "2026-11-13T17:08:36Z",
+            "stars": 35,
+            "forks": 2,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 32
+          },
+          {
+            "captured_at": "2026-11-13T17:24:40Z",
+            "stars": 35,
+            "forks": 2,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 32
+          },
+          {
+            "captured_at": "2026-11-13T17:28:38Z",
+            "stars": 37,
+            "forks": 2,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 32
+          },
+          {
+            "captured_at": "2026-11-13T17:45:37Z",
+            "stars": 42,
+            "forks": 2,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 32
+          },
+          {
+            "captured_at": "2026-11-13T22:18:21Z",
+            "stars": 121,
+            "forks": 5,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 40
+          },
+          {
+            "captured_at": "2026-11-14T01:20:43Z",
+            "stars": 170,
+            "forks": 12,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 42
+          },
+          {
+            "captured_at": "2026-11-14T18:12:01Z",
+            "stars": 389,
+            "forks": 24,
+            "open_issues": 1,
+            "open_prs": 0,
+            "commits": 45
+          },
+          {
+            "captured_at": "2026-11-14T18:20:56Z",
+            "stars": 390,
+            "forks": 24,
+            "open_issues": 1,
+            "open_prs": 0,
+            "commits": 45
+          },
+          {
+            "captured_at": "2026-11-14T19:23:58Z",
+            "stars": 395,
+            "forks": 24,
+            "open_issues": 1,
+            "open_prs": 0,
+            "commits": 45
+          },
+          {
+            "captured_at": "2026-11-14T20:27:01Z",
+            "stars": 401,
+            "forks": 25,
+            "open_issues": 1,
+            "open_prs": 0,
+            "commits": 45
+          },
+          {
+            "captured_at": "2026-11-14T21:16:22Z",
+            "stars": 407,
+            "forks": 25,
+            "open_issues": 1,
+            "open_prs": 0,
+            "commits": 45
+          },
+          {
+            "captured_at": "2026-11-14T21:25:02Z",
+            "stars": 407,
+            "forks": 25,
+            "open_issues": 1,
+            "open_prs": 0,
+            "commits": 45
+          },
+          {
+            "captured_at": "2026-11-14T21:33:50Z",
+            "stars": 408,
+            "forks": 25,
+            "open_issues": 1,
+            "open_prs": 0,
+            "commits": 45
+          },
+          {
+            "captured_at": "2026-11-14T21:40:03Z",
+            "stars": 408,
+            "forks": 25,
+            "open_issues": 1,
+            "open_prs": 0,
+            "commits": 45
+          },
+          {
+            "captured_at": "2026-11-14T21:46:06Z",
+            "stars": 408,
+            "forks": 25,
+            "open_issues": 1,
+            "open_prs": 0,
+            "commits": 45
+          },
+          {
+            "captured_at": "2026-11-14T22:07:46Z",
+            "stars": 411,
+            "forks": 25,
+            "open_issues": 1,
+            "open_prs": 0,
+            "commits": 45
+          },
+          {
+            "captured_at": "2026-11-14T22:14:36Z",
+            "stars": 412,
+            "forks": 25,
+            "open_issues": 1,
+            "open_prs": 0,
+            "commits": 45
+          },
+          {
+            "captured_at": "2026-11-14T22:20:19Z",
+            "stars": 413,
+            "forks": 25,
+            "open_issues": 1,
+            "open_prs": 0,
+            "commits": 45
+          },
+          {
+            "captured_at": "2026-11-14T22:34:07Z",
+            "stars": 417,
+            "forks": 26,
+            "open_issues": 1,
+            "open_prs": 0,
+            "commits": 45
+          },
+          {
+            "captured_at": "2026-11-14T22:38:53Z",
+            "stars": 417,
+            "forks": 26,
+            "open_issues": 1,
+            "open_prs": 0,
+            "commits": 45
+          },
+          {
+            "captured_at": "2026-11-14T23:16:41Z",
+            "stars": 420,
+            "forks": 26,
+            "open_issues": 1,
+            "open_prs": 0,
+            "commits": 45
+          }
+        ],
+        "star_history": [
+          {
+            "day": "2026-11-12",
+            "stars_added": 0
+          },
+          {
+            "day": "2026-11-13",
+            "stars_added": 248
+          },
+          {
+            "day": "2026-11-14",
+            "stars_added": 141
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_readme",
+      "args": {
+        "full_name": "berkantay/gpucanvas"
+      },
+      "result": {
+        "full_name": "berkantay/gpucanvas",
+        "readme": null
+      }
+    },
+    {
+      "tool": "get_repo_details",
+      "args": {
+        "full_name": "alexeyw/lot-map"
+      },
+      "result": {
+        "rank": 3,
+        "full_name": "alexeyw/lot-map",
+        "url": "https://github.com/alexeyw/lot-map",
+        "description": "A live map beside the chat that shows what Claude Code is doing: tool calls, model steps, hooks, skills and subagents light up as they happen. Local only, in 7 languages.",
+        "language": "TypeScript",
+        "topics": [
+          "agent-observability",
+          "ai-agents",
+          "claude",
+          "claude-code",
+          "claude-code-plugin",
+          "developer-tools",
+          "svg-animation",
+          "typescript",
+          "visualization"
+        ],
+        "license": "MIT",
+        "owner_type": "User",
+        "created_at": "2026-11-09T19:13:52Z",
+        "age_hours": 124.1,
+        "matched_filters": [
+          "ai-agents"
+        ],
+        "snapshot_count": 23,
+        "latest": {
+          "repo_id": 1451775929,
+          "captured_at": "2026-11-14T23:16:53Z",
+          "run_id": 71,
+          "stars": 824,
+          "forks": 87,
+          "watchers": 6,
+          "open_issues": 6,
+          "closed_issues": 7,
+          "open_prs": 1,
+          "merged_prs": 53,
+          "closed_prs": 3,
+          "releases": 3,
+          "commits": 53,
+          "commit_authors_recent": 10,
+          "last_commit_at": "2026-11-13T20:31:02Z",
+          "latest_release_tag": "v0.7.0",
+          "latest_release_at": "2026-11-13T20:31:24Z",
+          "pushed_at": "2026-11-14T22:32:24Z",
+          "disk_kb": 31051,
+          "is_archived": false
+        },
+        "velocity": {
+          "source": "snapshots",
+          "stars_gained": 101,
+          "span_hours": 25.0,
+          "stars_per_day": 97.07,
+          "lifetime_stars_per_day": 159.42
+        },
+        "activity": {
+          "issues_total": 13,
+          "prs_total": 57,
+          "factor": 1.0,
+          "signals": {
+            "forks": 1.0,
+            "issues_prs": 1.0,
+            "contributors": 1.0,
+            "commits": 1.0
+          }
+        },
+        "quality_multiplier": 1.0,
+        "score": 97.07,
+        "red_flags": [],
+        "snapshots": [
+          {
+            "captured_at": "2026-11-13T16:53:43Z",
+            "stars": 699,
+            "forks": 82,
+            "open_issues": 6,
+            "open_prs": 1,
+            "commits": 42
+          },
+          {
+            "captured_at": "2026-11-13T17:03:58Z",
+            "stars": 700,
+            "forks": 83,
+            "open_issues": 6,
+            "open_prs": 1,
+            "commits": 42
+          },
+          {
+            "captured_at": "2026-11-13T17:08:50Z",
+            "stars": 700,
+            "forks": 83,
+            "open_issues": 6,
+            "open_prs": 1,
+            "commits": 42
+          },
+          {
+            "captured_at": "2026-11-13T17:24:58Z",
+            "stars": 701,
+            "forks": 83,
+            "open_issues": 6,
+            "open_prs": 1,
+            "commits": 42
+          },
+          {
+            "captured_at": "2026-11-13T17:28:59Z",
+            "stars": 702,
+            "forks": 83,
+            "open_issues": 6,
+            "open_prs": 1,
+            "commits": 42
+          },
+          {
+            "captured_at": "2026-11-13T17:45:56Z",
+            "stars": 704,
+            "forks": 83,
+            "open_issues": 6,
+            "open_prs": 1,
+            "commits": 42
+          },
+          {
+            "captured_at": "2026-11-13T22:18:35Z",
+            "stars": 723,
+            "forks": 83,
+            "open_issues": 5,
+            "open_prs": 2,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T01:20:56Z",
+            "stars": 736,
+            "forks": 85,
+            "open_issues": 5,
+            "open_prs": 2,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T18:12:15Z",
+            "stars": 803,
+            "forks": 88,
+            "open_issues": 5,
+            "open_prs": 2,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T18:21:16Z",
+            "stars": 803,
+            "forks": 88,
+            "open_issues": 5,
+            "open_prs": 2,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T19:24:20Z",
+            "stars": 809,
+            "forks": 88,
+            "open_issues": 5,
+            "open_prs": 2,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T20:27:23Z",
+            "stars": 815,
+            "forks": 88,
+            "open_issues": 5,
+            "open_prs": 2,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T21:16:44Z",
+            "stars": 819,
+            "forks": 88,
+            "open_issues": 5,
+            "open_prs": 2,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T21:25:20Z",
+            "stars": 819,
+            "forks": 88,
+            "open_issues": 5,
+            "open_prs": 2,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T21:34:03Z",
+            "stars": 819,
+            "forks": 88,
+            "open_issues": 5,
+            "open_prs": 2,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T21:40:14Z",
+            "stars": 820,
+            "forks": 88,
+            "open_issues": 5,
+            "open_prs": 2,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T21:46:18Z",
+            "stars": 820,
+            "forks": 88,
+            "open_issues": 5,
+            "open_prs": 2,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T22:08:12Z",
+            "stars": 819,
+            "forks": 88,
+            "open_issues": 5,
+            "open_prs": 2,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T22:14:47Z",
+            "stars": 819,
+            "forks": 88,
+            "open_issues": 5,
+            "open_prs": 2,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T22:20:30Z",
+            "stars": 819,
+            "forks": 88,
+            "open_issues": 5,
+            "open_prs": 2,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T22:34:20Z",
+            "stars": 820,
+            "forks": 88,
+            "open_issues": 6,
+            "open_prs": 1,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T22:39:06Z",
+            "stars": 821,
+            "forks": 88,
+            "open_issues": 6,
+            "open_prs": 1,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T23:16:53Z",
+            "stars": 824,
+            "forks": 87,
+            "open_issues": 6,
+            "open_prs": 1,
+            "commits": 53
+          }
+        ],
+        "star_history": [
+          {
+            "day": "2026-11-09",
+            "stars_added": 1
+          },
+          {
+            "day": "2026-11-10",
+            "stars_added": 150
+          },
+          {
+            "day": "2026-11-11",
+            "stars_added": 309
+          },
+          {
+            "day": "2026-11-12",
+            "stars_added": 186
+          },
+          {
+            "day": "2026-11-13",
+            "stars_added": 116
+          },
+          {
+            "day": "2026-11-14",
+            "stars_added": 41
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_readme",
+      "args": {
+        "full_name": "alexeyw/lot-map"
+      },
+      "result": {
+        "full_name": "alexeyw/lot-map",
+        "readme": null
+      }
+    },
+    {
+      "tool": "get_repo_details",
+      "args": {
+        "full_name": "StormBrawlerSack/legwork-osint-ai-investigator"
+      },
+      "result": {
+        "rank": 4,
+        "full_name": "StormBrawlerSack/legwork-osint-ai-investigator",
+        "url": "https://github.com/StormBrawlerSack/legwork-osint-ai-investigator",
+        "description": "AI OSINT investigator for Windows: ask a question in plain words and get an answer built from public sources, with a source on every sentence.",
+        "language": "JavaScript",
+        "topics": [
+          "ai-agent",
+          "ai-investigator",
+          "citations",
+          "investigation",
+          "llm",
+          "osint",
+          "osint-tool",
+          "research-assistant"
+        ],
+        "license": "MIT",
+        "owner_type": "User",
+        "created_at": "2026-11-13T13:30:28Z",
+        "age_hours": 33.8,
+        "matched_filters": [
+          "ai-agents"
+        ],
+        "snapshot_count": 23,
+        "latest": {
+          "repo_id": 1456635592,
+          "captured_at": "2026-11-14T23:16:41Z",
+          "run_id": 71,
+          "stars": 219,
+          "forks": 16,
+          "watchers": 0,
+          "open_issues": 0,
+          "closed_issues": 0,
+          "open_prs": 0,
+          "merged_prs": 0,
+          "closed_prs": 0,
+          "releases": 0,
+          "commits": 9,
+          "commit_authors_recent": 1,
+          "last_commit_at": "2026-11-05T03:09:30Z",
+          "latest_release_tag": null,
+          "latest_release_at": null,
+          "pushed_at": "2026-11-13T13:31:56Z",
+          "disk_kb": 448,
+          "is_archived": false
+        },
+        "velocity": {
+          "source": "snapshots",
+          "stars_gained": 134,
+          "span_hours": 25.0,
+          "stars_per_day": 128.78,
+          "lifetime_stars_per_day": 155.64
+        },
+        "activity": {
+          "issues_total": 0,
+          "prs_total": 0,
+          "factor": 0.47,
+          "signals": {
+            "forks": 1.0,
+            "issues_prs": 0.0,
+            "contributors": 0.0,
+            "commits": 0.9
+          }
+        },
+        "quality_multiplier": 0.576,
+        "score": 74.18,
+        "red_flags": [
+          {
+            "code": "no_issues_or_prs",
+            "message": "No issues or pull requests despite attention",
+            "suspicious": false,
+            "penalty": 1.0,
+            "evidence": {
+              "stars": 219,
+              "issues_total": 0,
+              "prs_total": 0
+            }
+          },
+          {
+            "code": "single_author",
+            "message": "All recent commits come from one author",
+            "suspicious": false,
+            "penalty": 1.0,
+            "evidence": {
+              "commit_authors_recent": 1
+            }
+          }
+        ],
+        "snapshots": [
+          {
+            "captured_at": "2026-11-13T16:52:41Z",
+            "stars": 41,
+            "forks": 4,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-13T17:03:39Z",
+            "stars": 43,
+            "forks": 4,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-13T17:08:29Z",
+            "stars": 44,
+            "forks": 4,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-13T17:24:34Z",
+            "stars": 47,
+            "forks": 4,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-13T17:28:38Z",
+            "stars": 48,
+            "forks": 4,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-13T17:45:37Z",
+            "stars": 52,
+            "forks": 4,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-13T22:18:21Z",
+            "stars": 85,
+            "forks": 7,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T01:20:43Z",
+            "stars": 94,
+            "forks": 7,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T18:12:01Z",
+            "stars": 196,
+            "forks": 16,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T18:20:56Z",
+            "stars": 198,
+            "forks": 16,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T19:23:58Z",
+            "stars": 205,
+            "forks": 16,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T20:27:01Z",
+            "stars": 209,
+            "forks": 16,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T21:16:22Z",
+            "stars": 213,
+            "forks": 16,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T21:25:02Z",
+            "stars": 214,
+            "forks": 16,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T21:33:50Z",
+            "stars": 214,
+            "forks": 16,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T21:40:03Z",
+            "stars": 214,
+            "forks": 16,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T21:46:06Z",
+            "stars": 216,
+            "forks": 16,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T22:07:46Z",
+            "stars": 216,
+            "forks": 16,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T22:14:36Z",
+            "stars": 216,
+            "forks": 16,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T22:20:19Z",
+            "stars": 216,
+            "forks": 16,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T22:34:07Z",
+            "stars": 217,
+            "forks": 16,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T22:38:53Z",
+            "stars": 217,
+            "forks": 16,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T23:16:41Z",
+            "stars": 219,
+            "forks": 16,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          }
+        ],
+        "star_history": [
+          {
+            "day": "2026-11-13",
+            "stars_added": 142
+          },
+          {
+            "day": "2026-11-14",
+            "stars_added": 54
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_readme",
+      "args": {
+        "full_name": "StormBrawlerSack/legwork-osint-ai-investigator"
+      },
+      "result": {
+        "full_name": "StormBrawlerSack/legwork-osint-ai-investigator",
+        "readme": null
+      }
+    },
+    {
+      "tool": "get_repo_details",
+      "args": {
+        "full_name": "Dodaios/ste80-humanizer"
+      },
+      "result": {
+        "rank": 5,
+        "full_name": "Dodaios/ste80-humanizer",
+        "url": "https://github.com/Dodaios/ste80-humanizer",
+        "description": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.",
+        "language": "Python",
+        "topics": [
+          "agent-skills",
+          "ai-writing",
+          "asd-ste100",
+          "claude-code",
+          "claude-skills",
+          "codex",
+          "cursor",
+          "humanize-ai-text",
+          "humanizer",
+          "karpathy",
+          "llm",
+          "plain-language",
+          "simplified-technical-english",
+          "writing"
+        ],
+        "license": "MIT",
+        "owner_type": "Organization",
+        "created_at": "2026-11-09T17:18:59Z",
+        "age_hours": 126.0,
+        "matched_filters": [
+          "agent-keyword",
+          "ai-agents"
+        ],
+        "snapshot_count": 23,
+        "latest": {
+          "repo_id": 1451662178,
+          "captured_at": "2026-11-14T23:16:58Z",
+          "run_id": 71,
+          "stars": 595,
+          "forks": 37,
+          "watchers": 3,
+          "open_issues": 0,
+          "closed_issues": 0,
+          "open_prs": 0,
+          "merged_prs": 1,
+          "closed_prs": 1,
+          "releases": 0,
+          "commits": 9,
+          "commit_authors_recent": 1,
+          "last_commit_at": "2026-11-14T14:20:13Z",
+          "latest_release_tag": null,
+          "latest_release_at": null,
+          "pushed_at": "2026-11-14T14:20:14Z",
+          "disk_kb": 685,
+          "is_archived": false
+        },
+        "velocity": {
+          "source": "snapshots",
+          "stars_gained": 107,
+          "span_hours": 25.0,
+          "stars_per_day": 102.83,
+          "lifetime_stars_per_day": 113.36
+        },
+        "activity": {
+          "issues_total": 0,
+          "prs_total": 2,
+          "factor": 0.64,
+          "signals": {
+            "forks": 1.0,
+            "issues_prs": 0.67,
+            "contributors": 0.0,
+            "commits": 0.9
+          }
+        },
+        "quality_multiplier": 0.712,
+        "score": 73.21,
+        "red_flags": [
+          {
+            "code": "single_author",
+            "message": "All recent commits come from one author",
+            "suspicious": false,
+            "penalty": 1.0,
+            "evidence": {
+              "commit_authors_recent": 1
+            }
+          }
+        ],
+        "snapshots": [
+          {
+            "captured_at": "2026-11-13T16:53:43Z",
+            "stars": 482,
+            "forks": 29,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 8
+          },
+          {
+            "captured_at": "2026-11-13T17:03:58Z",
+            "stars": 482,
+            "forks": 29,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 8
+          },
+          {
+            "captured_at": "2026-11-13T17:08:50Z",
+            "stars": 482,
+            "forks": 29,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 8
+          },
+          {
+            "captured_at": "2026-11-13T17:24:58Z",
+            "stars": 482,
+            "forks": 29,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 8
+          },
+          {
+            "captured_at": "2026-11-13T17:28:59Z",
+            "stars": 482,
+            "forks": 29,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 8
+          },
+          {
+            "captured_at": "2026-11-13T17:45:56Z",
+            "stars": 483,
+            "forks": 29,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 8
+          },
+          {
+            "captured_at": "2026-11-13T22:18:35Z",
+            "stars": 488,
+            "forks": 29,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 8
+          },
+          {
+            "captured_at": "2026-11-14T01:20:56Z",
+            "stars": 490,
+            "forks": 29,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 8
+          },
+          {
+            "captured_at": "2026-11-14T18:12:20Z",
+            "stars": 556,
+            "forks": 35,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T18:21:16Z",
+            "stars": 558,
+            "forks": 35,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T19:24:20Z",
+            "stars": 568,
+            "forks": 35,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T20:27:23Z",
+            "stars": 578,
+            "forks": 35,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T21:16:44Z",
+            "stars": 582,
+            "forks": 35,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T21:25:20Z",
+            "stars": 582,
+            "forks": 35,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T21:34:09Z",
+            "stars": 583,
+            "forks": 35,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T21:40:20Z",
+            "stars": 583,
+            "forks": 35,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T21:46:23Z",
+            "stars": 584,
+            "forks": 35,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T22:08:17Z",
+            "stars": 586,
+            "forks": 35,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T22:14:52Z",
+            "stars": 587,
+            "forks": 36,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T22:20:36Z",
+            "stars": 589,
+            "forks": 36,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T22:34:25Z",
+            "stars": 590,
+            "forks": 36,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T22:39:11Z",
+            "stars": 590,
+            "forks": 36,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T23:16:58Z",
+            "stars": 595,
+            "forks": 37,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          }
+        ],
+        "star_history": [
+          {
+            "day": "2026-11-09",
+            "stars_added": 180
+          },
+          {
+            "day": "2026-11-10",
+            "stars_added": 156
+          },
+          {
+            "day": "2026-11-11",
+            "stars_added": 83
+          },
+          {
+            "day": "2026-11-12",
+            "stars_added": 48
+          },
+          {
+            "day": "2026-11-13",
+            "stars_added": 27
+          },
+          {
+            "day": "2026-11-14",
+            "stars_added": 61
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_readme",
+      "args": {
+        "full_name": "Dodaios/ste80-humanizer"
+      },
+      "result": {
+        "full_name": "Dodaios/ste80-humanizer",
+        "readme": null
+      }
+    },
+    {
+      "tool": "get_repo_details",
+      "args": {
+        "full_name": "simplexai-labs/linger"
+      },
+      "result": {
+        "rank": 6,
+        "full_name": "simplexai-labs/linger",
+        "url": "https://github.com/simplexai-labs/linger",
+        "description": "Linger is An Open-Source Personal Agent That Runs Fully on Your PC.  We aim to break Big Tech’s grip on AI by bringing powerful local AI to everyday computers through efficient model–harness co-design, so everyone can run their own.",
+        "language": "TypeScript",
+        "topics": [
+          "agent-teams",
+          "local-llm",
+          "memory",
+          "personal-agent",
+          "proactive-agent",
+          "proactive-ai"
+        ],
+        "license": "NOASSERTION",
+        "owner_type": "Organization",
+        "created_at": "2026-11-10T03:50:38Z",
+        "age_hours": 115.5,
+        "matched_filters": [
+          "agent-keyword"
+        ],
+        "snapshot_count": 23,
+        "latest": {
+          "repo_id": 1452175380,
+          "captured_at": "2026-11-14T23:16:53Z",
+          "run_id": 71,
+          "stars": 260,
+          "forks": 23,
+          "watchers": 1,
+          "open_issues": 3,
+          "closed_issues": 2,
+          "open_prs": 15,
+          "merged_prs": 68,
+          "closed_prs": 9,
+          "releases": 3,
+          "commits": 204,
+          "commit_authors_recent": 5,
+          "last_commit_at": "2026-11-14T02:14:11Z",
+          "latest_release_tag": "desktop-v0.1.1",
+          "latest_release_at": "2026-11-13T15:06:12Z",
+          "pushed_at": "2026-11-14T02:16:33Z",
+          "disk_kb": 42556,
+          "is_archived": false
+        },
+        "velocity": {
+          "source": "snapshots",
+          "stars_gained": 75,
+          "span_hours": 25.0,
+          "stars_per_day": 72.08,
+          "lifetime_stars_per_day": 54.06
+        },
+        "activity": {
+          "issues_total": 5,
+          "prs_total": 92,
+          "factor": 1.0,
+          "signals": {
+            "forks": 1.0,
+            "issues_prs": 1.0,
+            "contributors": 1.0,
+            "commits": 1.0
+          }
+        },
+        "quality_multiplier": 1.0,
+        "score": 72.08,
+        "red_flags": [],
+        "snapshots": [
+          {
+            "captured_at": "2026-11-13T16:53:43Z",
+            "stars": 169,
+            "forks": 17,
+            "open_issues": 0,
+            "open_prs": 13,
+            "commits": 202
+          },
+          {
+            "captured_at": "2026-11-13T17:03:58Z",
+            "stars": 169,
+            "forks": 17,
+            "open_issues": 0,
+            "open_prs": 13,
+            "commits": 202
+          },
+          {
+            "captured_at": "2026-11-13T17:08:50Z",
+            "stars": 169,
+            "forks": 17,
+            "open_issues": 0,
+            "open_prs": 13,
+            "commits": 202
+          },
+          {
+            "captured_at": "2026-11-13T17:24:58Z",
+            "stars": 169,
+            "forks": 17,
+            "open_issues": 0,
+            "open_prs": 14,
+            "commits": 202
+          },
+          {
+            "captured_at": "2026-11-13T17:28:53Z",
+            "stars": 169,
+            "forks": 17,
+            "open_issues": 0,
+            "open_prs": 14,
+            "commits": 202
+          },
+          {
+            "captured_at": "2026-11-13T17:45:50Z",
+            "stars": 169,
+            "forks": 17,
+            "open_issues": 0,
+            "open_prs": 14,
+            "commits": 202
+          },
+          {
+            "captured_at": "2026-11-13T22:18:35Z",
+            "stars": 185,
+            "forks": 17,
+            "open_issues": 0,
+            "open_prs": 14,
+            "commits": 202
+          },
+          {
+            "captured_at": "2026-11-14T01:20:56Z",
+            "stars": 189,
+            "forks": 17,
+            "open_issues": 0,
+            "open_prs": 14,
+            "commits": 202
+          },
+          {
+            "captured_at": "2026-11-14T18:12:15Z",
+            "stars": 244,
+            "forks": 22,
+            "open_issues": 3,
+            "open_prs": 15,
+            "commits": 204
+          },
+          {
+            "captured_at": "2026-11-14T18:21:09Z",
+            "stars": 245,
+            "forks": 22,
+            "open_issues": 3,
+            "open_prs": 15,
+            "commits": 204
+          },
+          {
+            "captured_at": "2026-11-14T19:24:11Z",
+            "stars": 251,
+            "forks": 22,
+            "open_issues": 3,
+            "open_prs": 15,
+            "commits": 204
+          },
+          {
+            "captured_at": "2026-11-14T20:27:16Z",
+            "stars": 254,
+            "forks": 22,
+            "open_issues": 3,
+            "open_prs": 15,
+            "commits": 204
+          },
+          {
+            "captured_at": "2026-11-14T21:16:37Z",
+            "stars": 255,
+            "forks": 22,
+            "open_issues": 3,
+            "open_prs": 15,
+            "commits": 204
+          },
+          {
+            "captured_at": "2026-11-14T21:25:13Z",
+            "stars": 255,
+            "forks": 22,
+            "open_issues": 3,
+            "open_prs": 15,
+            "commits": 204
+          },
+          {
+            "captured_at": "2026-11-14T21:34:03Z",
+            "stars": 255,
+            "forks": 22,
+            "open_issues": 3,
+            "open_prs": 15,
+            "commits": 204
+          },
+          {
+            "captured_at": "2026-11-14T21:40:14Z",
+            "stars": 255,
+            "forks": 22,
+            "open_issues": 3,
+            "open_prs": 15,
+            "commits": 204
+          },
+          {
+            "captured_at": "2026-11-14T21:46:18Z",
+            "stars": 257,
+            "forks": 22,
+            "open_issues": 3,
+            "open_prs": 15,
+            "commits": 204
+          },
+          {
+            "captured_at": "2026-11-14T22:08:12Z",
+            "stars": 258,
+            "forks": 22,
+            "open_issues": 3,
+            "open_prs": 15,
+            "commits": 204
+          },
+          {
+            "captured_at": "2026-11-14T22:14:47Z",
+            "stars": 258,
+            "forks": 22,
+            "open_issues": 3,
+            "open_prs": 15,
+            "commits": 204
+          },
+          {
+            "captured_at": "2026-11-14T22:20:30Z",
+            "stars": 258,
+            "forks": 22,
+            "open_issues": 3,
+            "open_prs": 15,
+            "commits": 204
+          },
+          {
+            "captured_at": "2026-11-14T22:34:20Z",
+            "stars": 258,
+            "forks": 23,
+            "open_issues": 3,
+            "open_prs": 15,
+            "commits": 204
+          },
+          {
+            "captured_at": "2026-11-14T22:39:06Z",
+            "stars": 258,
+            "forks": 23,
+            "open_issues": 3,
+            "open_prs": 15,
+            "commits": 204
+          },
+          {
+            "captured_at": "2026-11-14T23:16:53Z",
+            "stars": 260,
+            "forks": 23,
+            "open_issues": 3,
+            "open_prs": 15,
+            "commits": 204
+          }
+        ],
+        "star_history": [
+          {
+            "day": "2026-11-10",
+            "stars_added": 40
+          },
+          {
+            "day": "2026-11-11",
+            "stars_added": 47
+          },
+          {
+            "day": "2026-11-12",
+            "stars_added": 51
+          },
+          {
+            "day": "2026-11-13",
+            "stars_added": 75
+          },
+          {
+            "day": "2026-11-14",
+            "stars_added": 29
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_readme",
+      "args": {
+        "full_name": "simplexai-labs/linger"
+      },
+      "result": {
+        "full_name": "simplexai-labs/linger",
+        "readme": null
+      }
+    },
+    {
+      "tool": "get_repo_details",
+      "args": {
+        "full_name": "agentes-chat/agentes-chat"
+      },
+      "result": {
+        "rank": 7,
+        "full_name": "agentes-chat/agentes-chat",
+        "url": "https://github.com/agentes-chat/agentes-chat",
+        "description": "Open-source, self-hosted Slack alternative where your team and AI agents work together in channels and DMs. Agents run on Claude, ChatGPT/Codex, Gemini or Grok, with MCP tools, their own computer and browser, routines, memory and approvals. Web, desktop and phone apps. Docker Compose + Postgres. AGPL-3.0.",
+        "language": "TypeScript",
+        "topics": [
+          "agentic-ai",
+          "ai-agents",
+          "browser-automation",
+          "chat",
+          "claude",
+          "claude-code",
+          "codex",
+          "collaboration",
+          "computer-use",
+          "docker-compose",
+          "gemini",
+          "grok",
+          "human-in-the-loop",
+          "llm",
+          "mcp",
+          "multi-agent",
+          "openai",
+          "self-hosted",
+          "slack-alternative",
+          "team-chat"
+        ],
+        "license": "AGPL-3.0",
+        "owner_type": "Organization",
+        "created_at": "2026-11-09T00:50:28Z",
+        "age_hours": 142.5,
+        "matched_filters": [
+          "agent-keyword",
+          "ai-agents"
+        ],
+        "snapshot_count": 23,
+        "latest": {
+          "repo_id": 1450794567,
+          "captured_at": "2026-11-14T23:16:58Z",
+          "run_id": 71,
+          "stars": 1399,
+          "forks": 247,
+          "watchers": 3,
+          "open_issues": 72,
+          "closed_issues": 26,
+          "open_prs": 137,
+          "merged_prs": 273,
+          "closed_prs": 38,
+          "releases": 15,
+          "commits": 8911,
+          "commit_authors_recent": 2,
+          "last_commit_at": "2026-11-14T23:01:02Z",
+          "latest_release_tag": "desktop-v0.8.8",
+          "latest_release_at": "2026-11-14T23:04:11Z",
+          "pushed_at": "2026-11-14T23:11:27Z",
+          "disk_kb": 145410,
+          "is_archived": false
+        },
+        "velocity": {
+          "source": "snapshots",
+          "stars_gained": 67,
+          "span_hours": 25.0,
+          "stars_per_day": 64.39,
+          "lifetime_stars_per_day": 235.72
+        },
+        "activity": {
+          "issues_total": 98,
+          "prs_total": 448,
+          "factor": 0.88,
+          "signals": {
+            "forks": 1.0,
+            "issues_prs": 1.0,
+            "contributors": 0.5,
+            "commits": 1.0
+          }
+        },
+        "quality_multiplier": 0.904,
+        "score": 58.21,
+        "red_flags": [],
+        "snapshots": [
+          {
+            "captured_at": "2026-11-13T16:53:43Z",
+            "stars": 1302,
+            "forks": 216,
+            "open_issues": 55,
+            "open_prs": 111,
+            "commits": 8187
+          },
+          {
+            "captured_at": "2026-11-13T17:03:58Z",
+            "stars": 1303,
+            "forks": 216,
+            "open_issues": 55,
+            "open_prs": 111,
+            "commits": 8187
+          },
+          {
+            "captured_at": "2026-11-13T17:08:50Z",
+            "stars": 1303,
+            "forks": 216,
+            "open_issues": 55,
+            "open_prs": 111,
+            "commits": 8187
+          },
+          {
+            "captured_at": "2026-11-13T17:24:58Z",
+            "stars": 1308,
+            "forks": 217,
+            "open_issues": 56,
+            "open_prs": 111,
+            "commits": 8187
+          },
+          {
+            "captured_at": "2026-11-13T17:28:59Z",
+            "stars": 1310,
+            "forks": 217,
+            "open_issues": 56,
+            "open_prs": 111,
+            "commits": 8187
+          },
+          {
+            "captured_at": "2026-11-13T17:45:56Z",
+            "stars": 1315,
+            "forks": 219,
+            "open_issues": 56,
+            "open_prs": 110,
+            "commits": 8195
+          },
+          {
+            "captured_at": "2026-11-13T22:18:41Z",
+            "stars": 1332,
+            "forks": 226,
+            "open_issues": 62,
+            "open_prs": 116,
+            "commits": 8286
+          },
+          {
+            "captured_at": "2026-11-14T01:21:03Z",
+            "stars": 1344,
+            "forks": 227,
+            "open_issues": 70,
+            "open_prs": 129,
+            "commits": 8324
+          },
+          {
+            "captured_at": "2026-11-14T18:12:20Z",
+            "stars": 1384,
+            "forks": 246,
+            "open_issues": 73,
+            "open_prs": 131,
+            "commits": 8768
+          },
+          {
+            "captured_at": "2026-11-14T18:21:16Z",
+            "stars": 1384,
+            "forks": 246,
+            "open_issues": 73,
+            "open_prs": 132,
+            "commits": 8768
+          },
+          {
+            "captured_at": "2026-11-14T19:24:20Z",
+            "stars": 1388,
+            "forks": 247,
+            "open_issues": 73,
+            "open_prs": 140,
+            "commits": 8787
+          },
+          {
+            "captured_at": "2026-11-14T20:27:23Z",
+            "stars": 1390,
+            "forks": 247,
+            "open_issues": 73,
+            "open_prs": 131,
+            "commits": 8811
+          },
+          {
+            "captured_at": "2026-11-14T21:16:44Z",
+            "stars": 1391,
+            "forks": 247,
+            "open_issues": 72,
+            "open_prs": 126,
+            "commits": 8875
+          },
+          {
+            "captured_at": "2026-11-14T21:25:20Z",
+            "stars": 1392,
+            "forks": 247,
+            "open_issues": 72,
+            "open_prs": 125,
+            "commits": 8888
+          },
+          {
+            "captured_at": "2026-11-14T21:34:09Z",
+            "stars": 1392,
+            "forks": 247,
+            "open_issues": 72,
+            "open_prs": 125,
+            "commits": 8888
+          },
+          {
+            "captured_at": "2026-11-14T21:40:20Z",
+            "stars": 1392,
+            "forks": 247,
+            "open_issues": 72,
+            "open_prs": 124,
+            "commits": 8896
+          },
+          {
+            "captured_at": "2026-11-14T21:46:23Z",
+            "stars": 1392,
+            "forks": 247,
+            "open_issues": 72,
+            "open_prs": 124,
+            "commits": 8897
+          },
+          {
+            "captured_at": "2026-11-14T22:08:17Z",
+            "stars": 1395,
+            "forks": 247,
+            "open_issues": 72,
+            "open_prs": 125,
+            "commits": 8897
+          },
+          {
+            "captured_at": "2026-11-14T22:14:52Z",
+            "stars": 1395,
+            "forks": 247,
+            "open_issues": 72,
+            "open_prs": 135,
+            "commits": 8897
+          },
+          {
+            "captured_at": "2026-11-14T22:20:36Z",
+            "stars": 1396,
+            "forks": 247,
+            "open_issues": 72,
+            "open_prs": 136,
+            "commits": 8897
+          },
+          {
+            "captured_at": "2026-11-14T22:34:25Z",
+            "stars": 1397,
+            "forks": 247,
+            "open_issues": 72,
+            "open_prs": 135,
+            "commits": 8906
+          },
+          {
+            "captured_at": "2026-11-14T22:39:11Z",
+            "stars": 1397,
+            "forks": 247,
+            "open_issues": 72,
+            "open_prs": 135,
+            "commits": 8906
+          },
+          {
+            "captured_at": "2026-11-14T23:16:58Z",
+            "stars": 1399,
+            "forks": 247,
+            "open_issues": 72,
+            "open_prs": 137,
+            "commits": 8911
+          }
+        ],
+        "star_history": [
+          {
+            "day": "2026-11-09",
+            "stars_added": 0
+          },
+          {
+            "day": "2026-11-10",
+            "stars_added": 0
+          },
+          {
+            "day": "2026-11-11",
+            "stars_added": 609
+          },
+          {
+            "day": "2026-11-12",
+            "stars_added": 640
+          },
+          {
+            "day": "2026-11-13",
+            "stars_added": 108
+          },
+          {
+            "day": "2026-11-14",
+            "stars_added": 27
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_readme",
+      "args": {
+        "full_name": "agentes-chat/agentes-chat"
+      },
+      "result": {
+        "full_name": "agentes-chat/agentes-chat",
+        "readme": null
+      }
+    },
+    {
+      "tool": "get_repo_details",
+      "args": {
+        "full_name": "Moh4696/cinematic-skill"
+      },
+      "result": {
+        "rank": 8,
+        "full_name": "Moh4696/cinematic-skill",
+        "url": "https://github.com/Moh4696/cinematic-skill",
+        "description": "Agent skill for narrated cinematic films built entirely from code: one continuous camera over photos, maps and cards, timed to the voice. Claude Code, Codex, Cursor, Gemini CLI.",
+        "language": "Python",
+        "topics": [
+          "agent-skills",
+          "claude-code",
+          "codex",
+          "documentary",
+          "explainer-video",
+          "motion-graphics",
+          "skia",
+          "video"
+        ],
+        "license": "MIT",
+        "owner_type": "User",
+        "created_at": "2026-11-09T07:58:11Z",
+        "age_hours": 135.3,
+        "matched_filters": [
+          "agent-keyword"
+        ],
+        "snapshot_count": 23,
+        "latest": {
+          "repo_id": 1451084291,
+          "captured_at": "2026-11-14T23:16:58Z",
+          "run_id": 71,
+          "stars": 396,
+          "forks": 33,
+          "watchers": 0,
+          "open_issues": 0,
+          "closed_issues": 0,
+          "open_prs": 0,
+          "merged_prs": 0,
+          "closed_prs": 0,
+          "releases": 0,
+          "commits": 3,
+          "commit_authors_recent": 1,
+          "last_commit_at": "2026-11-09T15:35:09Z",
+          "latest_release_tag": null,
+          "latest_release_at": null,
+          "pushed_at": "2026-11-09T15:35:12Z",
+          "disk_kb": 1989,
+          "is_archived": false
+        },
+        "velocity": {
+          "source": "snapshots",
+          "stars_gained": 113,
+          "span_hours": 25.0,
+          "stars_per_day": 108.6,
+          "lifetime_stars_per_day": 70.24
+        },
+        "activity": {
+          "issues_total": 0,
+          "prs_total": 0,
+          "factor": 0.33,
+          "signals": {
+            "forks": 1.0,
+            "issues_prs": 0.0,
+            "contributors": 0.0,
+            "commits": 0.3
+          }
+        },
+        "quality_multiplier": 0.464,
+        "score": 50.39,
+        "red_flags": [
+          {
+            "code": "no_issues_or_prs",
+            "message": "No issues or pull requests despite attention",
+            "suspicious": false,
+            "penalty": 1.0,
+            "evidence": {
+              "stars": 396,
+              "issues_total": 0,
+              "prs_total": 0
+            }
+          },
+          {
+            "code": "single_author",
+            "message": "All recent commits come from one author",
+            "suspicious": false,
+            "penalty": 1.0,
+            "evidence": {
+              "commit_authors_recent": 1
+            }
+          },
+          {
+            "code": "code_dump",
+            "message": "Very few commits: looks like a one-shot code dump",
+            "suspicious": false,
+            "penalty": 1.0,
+            "evidence": {
+              "commits": 3
+            }
+          },
+          {
+            "code": "stale_while_growing",
+            "message": "Stars keep growing but no pushes recently",
+            "suspicious": false,
+            "penalty": 1.0,
+            "evidence": {
+              "days_since_push": 5.3,
+              "pushed_at": "2026-11-09T15:35:12Z"
+            }
+          }
+        ],
+        "snapshots": [
+          {
+            "captured_at": "2026-11-13T16:53:43Z",
+            "stars": 265,
+            "forks": 17,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-13T17:03:58Z",
+            "stars": 266,
+            "forks": 17,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-13T17:08:50Z",
+            "stars": 266,
+            "forks": 17,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-13T17:24:58Z",
+            "stars": 268,
+            "forks": 18,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-13T17:28:59Z",
+            "stars": 269,
+            "forks": 19,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-13T17:45:56Z",
+            "stars": 271,
+            "forks": 19,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-13T22:18:41Z",
+            "stars": 283,
+            "forks": 20,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-14T01:21:03Z",
+            "stars": 290,
+            "forks": 21,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-14T18:12:20Z",
+            "stars": 371,
+            "forks": 30,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-14T18:21:16Z",
+            "stars": 372,
+            "forks": 30,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-14T19:24:20Z",
+            "stars": 379,
+            "forks": 31,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-14T20:27:23Z",
+            "stars": 383,
+            "forks": 32,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-14T21:16:44Z",
+            "stars": 389,
+            "forks": 32,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-14T21:25:20Z",
+            "stars": 389,
+            "forks": 32,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-14T21:34:09Z",
+            "stars": 390,
+            "forks": 33,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-14T21:40:20Z",
+            "stars": 391,
+            "forks": 33,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-14T21:46:23Z",
+            "stars": 391,
+            "forks": 33,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-14T22:08:17Z",
+            "stars": 392,
+            "forks": 33,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-14T22:14:52Z",
+            "stars": 393,
+            "forks": 33,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-14T22:20:36Z",
+            "stars": 394,
+            "forks": 33,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-14T22:34:25Z",
+            "stars": 395,
+            "forks": 33,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-14T22:39:11Z",
+            "stars": 395,
+            "forks": 33,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          },
+          {
+            "captured_at": "2026-11-14T23:16:58Z",
+            "stars": 396,
+            "forks": 33,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 3
+          }
+        ],
+        "star_history": [
+          {
+            "day": "2026-11-09",
+            "stars_added": 59
+          },
+          {
+            "day": "2026-11-10",
+            "stars_added": 101
+          },
+          {
+            "day": "2026-11-11",
+            "stars_added": 54
+          },
+          {
+            "day": "2026-11-12",
+            "stars_added": 30
+          },
+          {
+            "day": "2026-11-13",
+            "stars_added": 69
+          },
+          {
+            "day": "2026-11-14",
+            "stars_added": 58
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_readme",
+      "args": {
+        "full_name": "Moh4696/cinematic-skill"
+      },
+      "result": {
+        "full_name": "Moh4696/cinematic-skill",
+        "readme": null
+      }
+    },
+    {
+      "tool": "get_repo_details",
+      "args": {
+        "full_name": "RouteInferno/shamus-osint-ai-agent"
+      },
+      "result": {
+        "rank": 9,
+        "full_name": "RouteInferno/shamus-osint-ai-agent",
+        "url": "https://github.com/RouteInferno/shamus-osint-ai-agent",
+        "description": "Command-line AI agent for OSINT: one command, it picks the tools, runs them and writes the case file.",
+        "language": "JavaScript",
+        "topics": [
+          "ai-agent",
+          "cli",
+          "investigation",
+          "llm",
+          "osint",
+          "osint-tool",
+          "reconnaissance",
+          "terminal"
+        ],
+        "license": "MIT",
+        "owner_type": "User",
+        "created_at": "2026-11-13T14:19:35Z",
+        "age_hours": 33.0,
+        "matched_filters": [
+          "ai-agents"
+        ],
+        "snapshot_count": 23,
+        "latest": {
+          "repo_id": 1456688919,
+          "captured_at": "2026-11-14T23:16:37Z",
+          "run_id": 71,
+          "stars": 157,
+          "forks": 8,
+          "watchers": 0,
+          "open_issues": 0,
+          "closed_issues": 0,
+          "open_prs": 0,
+          "merged_prs": 0,
+          "closed_prs": 0,
+          "releases": 0,
+          "commits": 9,
+          "commit_authors_recent": 1,
+          "last_commit_at": "2026-11-10T05:33:31Z",
+          "latest_release_tag": null,
+          "latest_release_at": null,
+          "pushed_at": "2026-11-13T14:20:57Z",
+          "disk_kb": 390,
+          "is_archived": false
+        },
+        "velocity": {
+          "source": "snapshots",
+          "stars_gained": 90,
+          "span_hours": 25.0,
+          "stars_per_day": 86.5,
+          "lifetime_stars_per_day": 114.35
+        },
+        "activity": {
+          "issues_total": 0,
+          "prs_total": 0,
+          "factor": 0.47,
+          "signals": {
+            "forks": 1.0,
+            "issues_prs": 0.0,
+            "contributors": 0.0,
+            "commits": 0.9
+          }
+        },
+        "quality_multiplier": 0.576,
+        "score": 49.82,
+        "red_flags": [
+          {
+            "code": "no_issues_or_prs",
+            "message": "No issues or pull requests despite attention",
+            "suspicious": false,
+            "penalty": 1.0,
+            "evidence": {
+              "stars": 157,
+              "issues_total": 0,
+              "prs_total": 0
+            }
+          },
+          {
+            "code": "single_author",
+            "message": "All recent commits come from one author",
+            "suspicious": false,
+            "penalty": 1.0,
+            "evidence": {
+              "commit_authors_recent": 1
+            }
+          }
+        ],
+        "snapshots": [
+          {
+            "captured_at": "2026-11-13T16:52:41Z",
+            "stars": 29,
+            "forks": 0,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-13T17:03:39Z",
+            "stars": 30,
+            "forks": 0,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-13T17:08:29Z",
+            "stars": 31,
+            "forks": 1,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-13T17:24:34Z",
+            "stars": 33,
+            "forks": 1,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-13T17:28:38Z",
+            "stars": 35,
+            "forks": 1,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-13T17:45:37Z",
+            "stars": 37,
+            "forks": 1,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-13T22:18:21Z",
+            "stars": 67,
+            "forks": 3,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T01:20:43Z",
+            "stars": 75,
+            "forks": 3,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T18:11:56Z",
+            "stars": 157,
+            "forks": 8,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T18:20:56Z",
+            "stars": 157,
+            "forks": 8,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T19:23:58Z",
+            "stars": 157,
+            "forks": 8,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T20:27:01Z",
+            "stars": 157,
+            "forks": 8,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T21:16:22Z",
+            "stars": 157,
+            "forks": 8,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T21:25:02Z",
+            "stars": 157,
+            "forks": 8,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T21:33:42Z",
+            "stars": 157,
+            "forks": 8,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T21:39:57Z",
+            "stars": 157,
+            "forks": 8,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T21:46:01Z",
+            "stars": 157,
+            "forks": 8,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T22:07:40Z",
+            "stars": 157,
+            "forks": 8,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T22:14:30Z",
+            "stars": 157,
+            "forks": 8,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T22:20:13Z",
+            "stars": 157,
+            "forks": 8,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T22:34:02Z",
+            "stars": 157,
+            "forks": 8,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T22:38:49Z",
+            "stars": 157,
+            "forks": 8,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          },
+          {
+            "captured_at": "2026-11-14T23:16:37Z",
+            "stars": 157,
+            "forks": 8,
+            "open_issues": 0,
+            "open_prs": 0,
+            "commits": 9
+          }
+        ],
+        "star_history": [
+          {
+            "day": "2026-11-13",
+            "stars_added": 115
+          },
+          {
+            "day": "2026-11-14",
+            "stars_added": 42
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_readme",
+      "args": {
+        "full_name": "RouteInferno/shamus-osint-ai-agent"
+      },
+      "result": {
+        "full_name": "RouteInferno/shamus-osint-ai-agent",
+        "readme": null
+      }
+    },
+    {
+      "tool": "get_repo_details",
+      "args": {
+        "full_name": "DandanLLab/SnowCatQQ"
+      },
+      "result": {
+        "rank": 10,
+        "full_name": "DandanLLab/SnowCatQQ",
+        "url": "https://github.com/DandanLLab/SnowCatQQ",
+        "description": "SnowCat 雪猫：NapCat + SnowLuma 融合第三方 QQ 客户端，社区接力维护，V8 通道全功能适配 QQ 9.9.37，全工具全源码公开",
+        "language": "TypeScript",
+        "topics": [
+          "chatbot",
+          "electron",
+          "mcp",
+          "napcat",
+          "onebot",
+          "onebot11",
+          "qq",
+          "qq-bot",
+          "reverse-engineering",
+          "snowcat"
+        ],
+        "license": "NOASSERTION",
+        "owner_type": "User",
+        "created_at": "2026-11-11T22:23:10Z",
+        "age_hours": 72.9,
+        "matched_filters": [
+          "ai-agents"
+        ],
+        "snapshot_count": 23,
+        "latest": {
+          "repo_id": 1454561955,
+          "captured_at": "2026-11-14T23:16:47Z",
+          "run_id": 71,
+          "stars": 319,
+          "forks": 127,
+          "watchers": 1,
+          "open_issues": 11,
+          "closed_issues": 51,
+          "open_prs": 0,
+          "merged_prs": 21,
+          "closed_prs": 7,
+          "releases": 1,
+          "commits": 53,
+          "commit_authors_recent": 5,
+          "last_commit_at": "2026-11-14T09:31:03Z",
+          "latest_release_tag": "v6.0.0",
+          "latest_release_at": "2026-11-11T22:30:20Z",
+          "pushed_at": "2026-11-14T09:31:04Z",
+          "disk_kb": 43359,
+          "is_archived": false
+        },
+        "velocity": {
+          "source": "snapshots",
+          "stars_gained": 38,
+          "span_hours": 25.0,
+          "stars_per_day": 36.52,
+          "lifetime_stars_per_day": 105.03
+        },
+        "activity": {
+          "issues_total": 62,
+          "prs_total": 28,
+          "factor": 1.0,
+          "signals": {
+            "forks": 1.0,
+            "issues_prs": 1.0,
+            "contributors": 1.0,
+            "commits": 1.0
+          }
+        },
+        "quality_multiplier": 1.0,
+        "score": 36.52,
+        "red_flags": [],
+        "snapshots": [
+          {
+            "captured_at": "2026-11-13T16:53:19Z",
+            "stars": 274,
+            "forks": 111,
+            "open_issues": 10,
+            "open_prs": 0,
+            "commits": 42
+          },
+          {
+            "captured_at": "2026-11-13T17:03:51Z",
+            "stars": 275,
+            "forks": 112,
+            "open_issues": 9,
+            "open_prs": 0,
+            "commits": 42
+          },
+          {
+            "captured_at": "2026-11-13T17:08:43Z",
+            "stars": 275,
+            "forks": 112,
+            "open_issues": 9,
+            "open_prs": 0,
+            "commits": 42
+          },
+          {
+            "captured_at": "2026-11-13T17:24:49Z",
+            "stars": 275,
+            "forks": 112,
+            "open_issues": 9,
+            "open_prs": 0,
+            "commits": 42
+          },
+          {
+            "captured_at": "2026-11-13T17:28:44Z",
+            "stars": 275,
+            "forks": 112,
+            "open_issues": 9,
+            "open_prs": 0,
+            "commits": 42
+          },
+          {
+            "captured_at": "2026-11-13T17:45:43Z",
+            "stars": 275,
+            "forks": 113,
+            "open_issues": 9,
+            "open_prs": 0,
+            "commits": 42
+          },
+          {
+            "captured_at": "2026-11-13T22:18:28Z",
+            "stars": 281,
+            "forks": 113,
+            "open_issues": 10,
+            "open_prs": 0,
+            "commits": 43
+          },
+          {
+            "captured_at": "2026-11-14T01:20:49Z",
+            "stars": 282,
+            "forks": 115,
+            "open_issues": 10,
+            "open_prs": 1,
+            "commits": 47
+          },
+          {
+            "captured_at": "2026-11-14T18:12:07Z",
+            "stars": 316,
+            "forks": 127,
+            "open_issues": 11,
+            "open_prs": 0,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T18:21:03Z",
+            "stars": 316,
+            "forks": 127,
+            "open_issues": 11,
+            "open_prs": 0,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T19:24:04Z",
+            "stars": 318,
+            "forks": 127,
+            "open_issues": 11,
+            "open_prs": 0,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T20:27:06Z",
+            "stars": 318,
+            "forks": 127,
+            "open_issues": 11,
+            "open_prs": 0,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T21:16:28Z",
+            "stars": 318,
+            "forks": 127,
+            "open_issues": 11,
+            "open_prs": 0,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T21:25:07Z",
+            "stars": 318,
+            "forks": 127,
+            "open_issues": 11,
+            "open_prs": 0,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T21:33:55Z",
+            "stars": 318,
+            "forks": 127,
+            "open_issues": 11,
+            "open_prs": 0,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T21:40:08Z",
+            "stars": 318,
+            "forks": 127,
+            "open_issues": 11,
+            "open_prs": 0,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T21:46:12Z",
+            "stars": 318,
+            "forks": 127,
+            "open_issues": 11,
+            "open_prs": 0,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T22:07:51Z",
+            "stars": 318,
+            "forks": 127,
+            "open_issues": 11,
+            "open_prs": 0,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T22:14:41Z",
+            "stars": 318,
+            "forks": 127,
+            "open_issues": 11,
+            "open_prs": 0,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T22:20:24Z",
+            "stars": 318,
+            "forks": 127,
+            "open_issues": 11,
+            "open_prs": 0,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T22:34:13Z",
+            "stars": 319,
+            "forks": 127,
+            "open_issues": 11,
+            "open_prs": 0,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T22:39:00Z",
+            "stars": 319,
+            "forks": 127,
+            "open_issues": 11,
+            "open_prs": 0,
+            "commits": 53
+          },
+          {
+            "captured_at": "2026-11-14T23:16:47Z",
+            "stars": 319,
+            "forks": 127,
+            "open_issues": 11,
+            "open_prs": 0,
+            "commits": 53
+          }
+        ],
+        "star_history": [
+          {
+            "day": "2026-11-11",
+            "stars_added": 114
+          },
+          {
+            "day": "2026-11-12",
+            "stars_added": 128
+          },
+          {
+            "day": "2026-11-13",
+            "stars_added": 54
+          },
+          {
+            "day": "2026-11-14",
+            "stars_added": 20
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_readme",
+      "args": {
+        "full_name": "DandanLLab/SnowCatQQ"
+      },
+      "result": {
+        "full_name": "DandanLLab/SnowCatQQ",
+        "readme": null
+      }
+    }
+  ]
+}
