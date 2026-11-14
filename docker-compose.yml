@@ -1,0 +1,29 @@
+x-app: &app
+  build: .
+  image: rising-tracker:latest
+  env_file:
+    - path: .env
+      required: false
+  volumes:
+    - ./config.yaml:/app/config.yaml:ro
+    - ./data:/app/data
+  restart: unless-stopped
+
+services:
+  scheduler:
+    <<: *app
+    command: ["schedule"]
+
+  api:
+    <<: *app
+    command: ["serve", "--host", "0.0.0.0", "--port", "8000"]
+    ports: ["8000:8000"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+
+  cli:
+    <<: *app
+    restart: "no"
+    profiles: ["cli"]
+    command: ["--help"]
