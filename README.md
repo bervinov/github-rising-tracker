@@ -5,6 +5,8 @@ repeatedly (popularity and activity), keeps the full time series, and asks an LL
 Markdown digest of the top N. **Every number in the digest is checked against the data the agent
 retrieved before the digest is saved.**
 
+Architecture diagram: [`docs/architecture.md`](docs/architecture.md).
+
 ## Quick start
 
 Docker (Compose v2.24+):
@@ -97,8 +99,8 @@ file sharing); `docker compose stop` first.
 ## Architecture
 
 One package and one Docker image, run as the collector and the API plus one-off CLI commands,
-sharing one SQLite file. Dependencies point inward; `domain` has no I/O. Container
-diagram: [`docs/architecture.md`](docs/architecture.md).
+sharing one SQLite file, as drawn in [`docs/architecture.md`](docs/architecture.md). Dependencies
+point inward; `domain` has no I/O.
 
 ```
 src/rising/
